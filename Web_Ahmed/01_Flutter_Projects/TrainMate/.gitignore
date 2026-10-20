@@ -1,0 +1,35 @@
+# IDE
+.cursor/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Root CMake / Flutter desktop build cache
+/build/
+
+# Python
+**/.venv/
+**/.venv_export/
+**/__pycache__/
+**/*.pyc
+**/.env
+**/*.db
+
+# Flutter / Dart
+**/.dart_tool/
+**/.pub-cache/
+**/build/
+**/android/.gradle/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/ios/Flutter/.last_build_id
+
+# Temporary ML export artifacts
+**/assets/models/_tmp_saved_model/
+
+# Nested git repos
+trainmate_app/.git/

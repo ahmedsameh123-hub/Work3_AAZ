@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+</head>
+<body>
+    <input type="text" id="noteInput" placeholder="Enter your note...">
+    <button id="addNoteBtn">Add Note</button>
+
+    <div id="notesContainer"></div>
+
+    <script>
+        const notesContainer = document.getElementById('notesContainer');
+
+        document.getElementById('addNoteBtn').addEventListener('click', function () {
+            const noteText = document.getElementById('noteInput').value;
+            if (noteText.trim() !== "") {
+                const noteDiv = document.createElement('div');
+                noteDiv.style.margin = '10px';
+                noteDiv.style.padding = '10px';
+                noteDiv.style.border = '1px solid #ccc';
+                noteDiv.innerHTML = `
+                    <p>${noteText}</p>
+                    <button onclick="deleteNote(this)">Delete</button>
+                `;
+                notesContainer.appendChild(noteDiv);
+                document.getElementById('noteInput').value = '';
+            }
+        });
+
+        function deleteNote(button) {
+            const noteDiv = button.parentElement;
+            notesContainer.removeChild(noteDiv);
+        }
+    </script>
+</body>
+</html>

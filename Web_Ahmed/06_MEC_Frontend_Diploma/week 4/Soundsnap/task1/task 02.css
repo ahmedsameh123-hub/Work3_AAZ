@@ -1,0 +1,71 @@
+pre{
+
+}
+
+
+#aaw{
+    color: aliceblue;
+    background-color: black;
+    width: 450px;
+    height: 200px;
+    position: relative;
+   
+}
+
+#aas{
+    width: 450px;
+    height: 200px; 
+    position: absolute;
+    left: 450px;
+    top: 48px;
+    display: inline-block;
+    
+}
+
+#wwwe{
+width: 900px;
+}
+div > img {
+    width: 200px;
+    height: 150px;
+}
+
+div button {
+   bottom: 45px;
+   background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 120px;
+    height: 35px;
+    border-color: grey;
+    border: 90px;
+    
+}
+
+#oop{
+    color: aliceblue;
+    background-color: black;
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+#ppo{
+    
+    position: relative;
+    left: 450px;
+    top: -300px;
+    width: 450px;
+    height: 300px;
+}
+
+
+#lm{
+
+    color: aliceblue;
+    background-color: black;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    left: 450px;
+    top: -300px;
+}

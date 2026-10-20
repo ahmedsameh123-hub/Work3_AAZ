@@ -1,0 +1,33 @@
+
+/* 
+
+Name : Ahmed Sameh Basuny 
+Id : 222100081 
+Cource : CSE211 WEb Programming 
+Assignment : Course Project 
+Date : 7 / 1 / 2025
+Description : The purpose of this oss is to style the page(s) in course project
+
+*/
+
+
+#movieDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+#movieDetails img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+#movieDetails h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+#movieDetails p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}

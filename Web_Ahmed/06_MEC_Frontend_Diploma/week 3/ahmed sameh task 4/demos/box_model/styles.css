@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    /* width + height */
+    width: 400px;
+    height: 200px;
+
+    /* padding */
+    padding: 15px;
+
+    padding-top: 5px;
+    padding-bottom:4px;
+    padding-left: 10px;
+    padding-right:8px;
+
+    /* Short-hand top-right-bottom-left */
+    padding: 5px 8px 4px 10px;
+
+    /* Short-hand 2 top and bottom  =5 , left and right = 10*/
+    padding: 5px 10px;  
+
+
+    margin: 5px;
+
+    
+    /* border-color:red;
+    border-width: 5px; 
+    border-style: dotted; */
+
+    /* Short-hand */
+    /* border: 5px solid red; */
+
+    border-bottom: 5px solid black;
+    border-bottom-color: red;
+
+}
+
+p{
+    border: 1px solid black;
+    width:200px;
+    height: 100px;
+    margin-top:100px;
+    margin-left: 50px;
+}
+a{
+    width:200px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+
+div{
+    background-color: aqua;
+    margin:5px 2px;
+    height: 80px;
+    display: inline-block;
+    width:450px;
+    border:10px solid black;
+}

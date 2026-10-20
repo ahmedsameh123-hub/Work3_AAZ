@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .toast {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff; 
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            opacity: 0.9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+        }
+        .toast a {
+            color: #ffd700; 
+            text-decoration: none;
+        }
+        .toast a:hover {
+            text-decoration: underline;
+        }
+        .toast button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #progressBar {
+            width: 100%;
+            height: 5px;
+            background-color: #ffd700; 
+            margin-top: 10px;
+        }
+        #toggleButton {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton" onclick="toggleNotifications()">Toggle Messages</button>
+
+    <div id="notification" class="toast" style="display: none;">
+        <span>You've received a new email. Click <a href="https://mail.google.com/" target="_blank">here</a> to view it.</span>
+        <button onclick="closeNotification()">X</button>
+        <div id="progressBar"></div>
+    </div>
+
+    <script>
+        let notificationInterval;
+        let showNotifications = true;
+
+        function showNotification() {
+            if (showNotifications) {
+                const notification = document.getElementById("notification");
+                notification.style.display = "flex";
+
+                let width = 100;
+                const progressBar = document.getElementById("progressBar");
+                const interval = setInterval(function() {
+                    if (width <= 0) {
+                        clearInterval(interval);
+                        closeNotification();
+                    } else {
+                        width--;
+                        progressBar.style.width = width + '%';
+                    }
+                }, 70);
+
+                setTimeout(() => {
+                    closeNotification();
+                    clearInterval(interval);
+                }, 7000);
+            }
+        }
+
+        function closeNotification() {
+            document.getElementById("notification").style.display = "none";
+        }
+
+        function toggleNotifications() {
+            showNotifications = !showNotifications;
+            if (showNotifications) {
+                notificationInterval = setInterval(showNotification, 60000);
+            } else {
+                clearInterval(notificationInterval);
+            }
+        }
+
+        window.onload = function() {
+            notificationInterval = setInterval(showNotification, 60000);
+        }
+    </script>
+</body>
+</html>
+

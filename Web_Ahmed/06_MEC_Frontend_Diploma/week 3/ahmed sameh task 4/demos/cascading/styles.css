@@ -1,0 +1,27 @@
+/* #myHeader{
+    color:yellow;
+}
+ */
+
+/* div .my-header2{
+    color:blue;
+}
+
+
+.red-header{
+    color:red !important;
+    background-color: yellow;
+} */
+
+body{
+    background-color:blue;
+}
+*{
+    background-color:red;
+}
+
+
+
+/*  Cascading */
+/* Specificity */
+/* Inheritance */

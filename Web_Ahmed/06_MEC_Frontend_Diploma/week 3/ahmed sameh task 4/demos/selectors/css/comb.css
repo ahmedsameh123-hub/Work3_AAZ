@@ -1,0 +1,56 @@
+/* Parent  - Child */
+
+/*  Descendent (inside) Combinator */
+.container a{
+    color:blue;
+}
+
+/* Child Combinator (Direct Child) */
+.container > a{
+    background-color: aquamarine;
+}
+
+
+/* Sibling */
+
+/* General (Indirect) Sibling */
+h1 ~ p{
+    color:crimson;
+}
+
+/* Direct Sibling */
+h1 + p{
+    color:green;
+}
+
+
+/* Combinations */
+.container a+button{
+    color:blue;
+}
+
+/* Grouping */
+/* p{
+    color:red;
+}
+a{
+    color:red;
+}
+.text{
+    color:red;
+} */
+
+
+/* Pseudo Classes */
+a:hover{
+    color:chocolate;
+    /* font-size: 50px; */
+}
+
+a:visited{
+    color:  red;
+}
+
+input:focus{
+    background-color: cornflowerblue;
+}

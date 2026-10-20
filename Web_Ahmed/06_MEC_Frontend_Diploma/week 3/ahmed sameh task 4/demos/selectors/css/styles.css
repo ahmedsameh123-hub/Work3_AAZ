@@ -1,0 +1,38 @@
+/* Universal, wild card  */
+*{
+    /* color:yellow; */
+}
+
+/* Tag Selector , type , element*/
+h1 {
+    color:blue;
+}
+
+/* ID Selector */
+#customHeader{
+    color:brown;
+}
+
+/* Class Selector */
+.highlighted {
+    color:black;
+    background-color:aquamarine;
+}
+
+.blue-text{
+    color:blue;
+}
+
+/* Attribute Selector */
+input[type="email"] {
+    background-color: palegreen;
+}
+
+/* Start with  ^ */
+a[href^="www."]{
+    color: coral;
+}
+/* End with */
+a[href$=".pdf"]{
+    color: coral;
+}

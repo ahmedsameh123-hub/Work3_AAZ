@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الأفلام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>مكتبة الأفلام</h1>
+            <input type="text" id="search" placeholder="ابحث عن فيلم أو مسلسل...">
+        </nav>
+    </header>
+    
+    <main>
+        <section id="featured-movies">
+            <h2>أفلام مميزة</h2>
+            <div class="movie-grid"></div>
+        </section>
+        
+        <section id="search-results" class="hidden">
+            <h2>نتائج البحث</h2>
+            <div class="movie-grid"></div>
+        </section>
+        
+        <section id="movie-details" class="hidden">
+            <button id="close-details">إغلاق</button>
+            <h2 id="movie-title"></h2>
+            <img id="movie-poster" src="" alt="ملصق الفيلم">
+            <p id="movie-summary"></p>
+            <p><strong>التقييم:</strong> <span id="movie-rating"></span></p>
+            <p><strong>تاريخ الإصدار:</strong> <span id="movie-release-date"></span></p>
+            <button id="watch-trailer">مشاهدة المقطع الدعائي</button>
+        </section>
+        
+        <section id="watchlist">
+            <h2>قائمة المشاهدة</h2>
+            <div class="movie-grid"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <button id="toggle-theme">تبديل الوضع الليلي</button>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soundsnap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container-fluid d-flex">
+                 
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#search-box"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-search"></i>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h4><i class="bi bi-soundwave"></i>&nbsp;soundsnap</h4>
+                </a>
+                <div class="collapse navbar-collapse input-group-text" id="search-box">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    <input type="search" class="form-control" placeholder="Search for sound Effects" aria-label="search"
+                        aria-describedby="basic-addon1">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 ">
+                        <li class="nav-item px-">
+                            <a class="nav-link " aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">SFXHD</a>
+                        </li>
+                        <li class="nav-item d-flex px-4">
+                            <span class="d-flex">
+                                <a class="nav-link Reg-log" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Login</a>
+                                <span style="font-size: 20px;">/</span>
+                                <a class="nav-link Reg-log" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop1">Register</a>
+                            </span>
+                        </li>
+                        <li><a class="nav-link px-2" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li> <a class="nav-link px-2" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li> <a class="nav-link px-2" href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header flex-column login-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title"><i class="bi bi-soundwave"></i></h1><br>
+                        <h2 class="modal-title" id="staticBackdropLabel">Login Soundsnap</h2>
+
+                        <div class="modal-body" style="width: 80%;">
+                            <form class="flex-column align-items-center" action="">
+                                <div class="mb-2">
+                                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter username or e-mail address">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Enter password">
+                                </div>
+
+                                <button type="submit" class="btn login-btn">Login</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header flex-column login-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title"><i class="bi bi-soundwave"></i></h1><br>
+                        <h2 class="modal-title" id="staticBackdropLabel">Create an account for free</h2>
+
+                        <div class="modal-body" style="width: 80%;">
+                            <form action="thank.html">
+                                <div class="mb-1">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter e-mail address">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Enter password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Confirm password">
+                                    <div id="emailHelp" class="form-text">By signing up you agree to receive our
+                                        newsletter. No spam</div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"> I agree to the <span
+                                            class="links-rule"><a>Terms of Service</a></span> and <span
+                                            class="links-rule"><a>Privacy Policy</a></span></label>
+                                </div>
+
+                                <button type="submit" class="btn reg-btn" onsubmit="thank.html">Create Account</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="first-section" class="row-reverse flex-wrap-reverse ">
+            <div id="left-div" class="col-lg-6 col-md-12 col-sm-12 justify-content-around col">
+                <h1>Find The Perfect Sound Effect.</h1>
+                <p>431,004 Available Sounds. Library Updated Weekly. Unlimited Downloads.</p>
+                <button type="button" class="btn btn-secondary btn-lg w-sm-100">Buy Sound Effects</button>
+            </div>
+            <div id="right-div" class="col-lg-6 col-md-12 "><img src="images/hero-bg-2.jpg" alt="bg">
+            </div>
+        </div>
+        <section class="container py-5">
+            <h3 style="font-weight: bold;">Featured Sound Effect Categories</h3>
+            <br>
+            <div class="row justify-content-center">
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="walla">
+                        <a href="#">WALLA</a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="whoosh">
+                        <a href="#">WHOOSH</a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="wind">
+                        <a href="#">Wind</a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="footsteps">
+                        <a href="#">FOOTSTEPS</a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="cartoon">
+                        <a href="#">CARTOON</a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="drones">
+                        <a href="#">DRONES</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class=" col-lg-6 col-md-6 col-sm-12 p-1">
+                    <div class="rounded " id="menus">
+                        <a href="#">MENUS & INTERFACES</a>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-12 p-1">
+                    <div class="rounded" id="ambience">
+                        <a href="#">AMBIENCE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="container py-5">
+            <h3 style="font-weight: bold;">Browse sounds by</h3>
+            <br>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-btn active" id="pills-latest-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-latest" type="button" role="tab" aria-controls="pills-latest"
+                        aria-selected="true">latest</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-btn" id="pills-tags-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-location" type="button" role="tab" aria-controls="pills-locations"
+                        aria-selected="false">locations</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-btn" id="pills-tags-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-tags" type="button" role="tab" aria-controls="pills-tags"
+                        aria-selected="false">tags</button>
+                </li>
+            </ul>
+            <div class="tab-content py-2" id="pills-tabContent">
+                <div class="tab-pane fade show active row" id="pills-latest" role="tabpanel"
+                    aria-labelledby="pills-latest-tab">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded" id="vintage-anime">
+                                <a href="#">VINTAGE ANIME</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded" id="futur-vehicles">
+                                <a href="#">FUTURISTIC VEHICLES</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded" id="worship">
+                                <a href="#">WORSHIP</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded" id="vibrations">
+                                <a href="#">VIBRATIONS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade row" id="pills-location" role="tabpanel" aria-labelledby="pills-location-tab">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">New York</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Paris</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Washington</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Athens</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Rio</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">China</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">India</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Istanbul</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane row fade" id="pills-tags" role="tabpanel" aria-labelledby="pills-tags-tab">
+                    <div class="row">
+                        <div class=" col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class=" rounded location-tags">
+                                <a href="#">Dry</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">Sustain</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">London</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="location-tags rounded">
+                                <a href="#">Brazil</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">Ping</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">Polaroid</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">Squeaky</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 p-2">
+                            <div class="rounded location-tags">
+                                <a href="#">Manic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <h3 style="font-weight: bold;">Featuring sound designers & recordists from</h3>
+            <br>
+            <!-- Section: Images -->
+            <div class="row my-3">
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="tenet">
+                        <a href="#">TENET</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="westworld">
+                        <a href="#">WESTWORLD</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="the-revenant">
+                        <a href="#">THE REVENANT</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="mad-max">
+                        <a href="#">MAD MAX</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="black-swan">
+                        <a href="#">BLACK SWAN</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 p-1">
+                    <div class="rounded" id="baby-driver">
+                        <a href="#">BABY DRIVER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="jumbotron statistics">
+                <h3>Discover the world’s most widely used sound effects platform</h3>
+                <br>
+                <h1>2,895,835</h1>
+                <p>Registered Users</p>
+                <h1>431,734</h1>
+                <p>No. of Sounds</p>
+            </div>
+
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 statistics">
+                        <h1><i class="bi bi-bar-chart"></i></h1>
+                        <h4>A focus on Sound</h4>
+                        <p>Soundsnap focuses solely on professional sound effects, with curated sounds added weekly.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 statistics">
+                        <h1><i class="bi bi-file-diff"></i></h1>
+                        <h3>Twice as Big</h3>
+                        <p>We are the first and most popular sfx library for unlimited downloads - twice as big as most
+                            others.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 statistics">
+                        <h1><i class="bi bi-brush"></i></h1>
+                        <h3>Royalty Free Sound Effects</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 statistics">
+                        <h1><i class="bi bi-chat-left"></i></h1>
+                        <h3>Great Customer Service</h3>
+                        <p>Our support staff promises to respond to all inquiries within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-section" class="row">
+            <div id="left-section" class="container col-lg-5 col-md-12 col-sm-12 ">
+                <h2 class="subtitle">
+                    Trusted by<br>Leading Brands,<br>Agencies, Networks<br>and Hollywood Studios.
+                </h2>
+            </div>
+            <div id="right-section" class="col-lg-7 col-md-12 p-0">
+                <div id="brand-icons">
+                    <div class="client">
+                        <img alt="netflix" src="task2/netflix.png">
+                    </div>
+                    <div class="client">
+                        <img alt="tesla" src="task2/Tesla.png">
+                    </div>
+                    <div class="client">
+                        <img alt="vice" src="task2/vice.png">
+                    </div>
+                    <div class="client">
+                        <img alt="apple" src="task2/apple.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Konami" src="task2/konami.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Microsoft" src="task2/microsoft.png">
+                    </div>
+                    <div class="client">
+                        <img alt="ogilvy" src="task2/ogilvy.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Desiny" src="task2/disney.png">
+                    </div>
+                    <div class="client">
+                        <img alt="HBO" src="task2/hbo.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Aljaeera" src="task2/al-jazeera.png">
+                    </div>
+                    <div class="client">
+                        <img alt="guitar hero" src="task2/guitar-hero.png">
+                    </div>
+                    <div class="client">
+                        <img alt="playstation" src="task2/playstation.png">
+                    </div>
+                    <div class="client">
+                        <img alt="discovery" src="task2/Discovery.png">
+                    </div>
+                    <div class="client">
+                        <img alt="zynga" src="task2/zynga.png">
+                    </div>
+                    <div class="client">
+                        <img alt="snapchat" src="task2/snapchat.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Pixar" src="task2/pixar.png">
+                    </div>
+                    <div class="client">
+                        <img alt="comedy central" src="task2/Comedy_Central.png">
+                    </div>
+                    <div class="client">
+                        <img alt="nicelodeon" src="task2/nickelodeon.png">
+                    </div>
+                    <div class="client">
+                        <img alt="Nokia" src="task2/nokia.png">
+                    </div>
+                    <div class="client">
+                        <img alt="BBC" src="task2/bbc.png">
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-section">
+                <h2 class="subtitle">Sound like a Pro.<br><a href="#">Get started for free.</a></h2>
+            </div>
+            <div class="row" id="last-section">
+                <div class="col-lg-4 col-md-3 col-xs-1 justify-content-center">
+                    <a href="#">
+                        <h4><i class="bi bi-soundwave"></i>&nbsp;soundsnap</h4>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-1">
+                    <div class="col justify-content-center">
+                        <h5>Product</h5>
+                        <a href="#">Browse Sounds</a><br>
+                        <a href="#">Pricing</a><br>
+                        <a href="#">FAQ</a><br>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-1">
+                    <div class="col justify-content-center">
+                        <h5>Company</h5>
+                        <a href="#">Jobs</a><a href="#">Blog</a><br>
+                        <a href="#">Education</a><br>
+                        <a href="#">Contact</a><br>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-1">
+                    <div class="col justify-content-center">
+                        <h5>Legal</h5>
+                        <a href="#">Licence</a><br>
+                        <a href="#">Terms of Use</a><br>
+                        <a href="#">Privacy Policy</a><br>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-1">
+                    <a href=""><i class="bi bi-facebook"></i></a>&nbsp;
+                    <a href=""><i class="bi bi-twitter"></i></a>&nbsp;
+                    <a href=""><i class="bi bi-instagram"></i></a>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

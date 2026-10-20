@@ -1,0 +1,946 @@
+.location-tags {
+    background-color: #dae8ec;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100px;
+  }
+  
+  .location-tags a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .location-tags:hover {
+    background-color: #bfe4ee;
+  }
+  
+  .body {
+    font-family: 'Archivo', sans-serif;
+  }
+  
+  nav {
+    background-color: #FFFF;
+    color: black;
+  }
+  
+  nav #search-box {
+    border-color: transparent;
+    width: 45%;
+    border: none;
+    background: #FFFF;
+  }
+  
+  nav #search-box span {
+    background-color: #FFFF;
+    border: none;
+    color: gray;
+  }
+  
+  nav #search-box input {
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  nav .Reg-log {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .login-btn {
+    background-color: #52d9a0;
+    border-radius: 5px;
+    margin: 1% 12;
+    color: white;
+    padding: 5px 44%;
+  }
+  
+  .login-btn:hover {
+    background-color: #2dcb88;
+    color: white;
+  }
+  
+  .reg-btn {
+    background-color: #52d9a0;
+    border-radius: 5px;
+    margin: 1% 12;
+    color: white;
+    padding: 5px 33.5%;
+  }
+  
+  .reg-btn:hover {
+    background-color: #2dcb88;
+    color: white;
+  }
+  
+  .links-rule {
+    text-decoration: none;
+    color: #52d9a0;
+  }
+  
+  #first-section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 3%;
+    color: white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #first-section #right-div img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #first-section #left-div {
+    padding: 3% 5.4% 5% 5%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  
+  #first-section #left-div p {
+    font-size: 1em;
+    margin: 3% 0%;
+  }
+  
+  #first-section #left-div h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  #first-section #left-div button {
+    height: 16%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: white solid 1px;
+    background-color: transparent;
+    margin: 2% 0%;
+  }
+  
+  #first-section #left-div button:hover {
+    background-color: #52d9a0;
+    color: black;
+  }
+  
+  #walla {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/walla.jpg");
+  }
+  
+  #walla a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #walla:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #walla:hover a {
+    color: #333;
+  }
+  
+  #whoosh {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/whoosh.jpg");
+  }
+  
+  #whoosh a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #whoosh:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #whoosh:hover a {
+    color: #333;
+  }
+  
+  #wind {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/wind.jpg");
+  }
+  
+  #wind a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #wind:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #wind:hover a {
+    color: #333;
+  }
+  
+  #footsteps {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/footsteps.jpg");
+  }
+  
+  #footsteps a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #footsteps:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #footsteps:hover a {
+    color: #333;
+  }
+  
+  #cartoon {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/cartoon.jpg");
+  }
+  
+  #cartoon a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #cartoon:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #cartoon:hover a {
+    color: #333;
+  }
+  
+  #drones {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/drones.jpg");
+  }
+  
+  #drones a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #drones:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #drones:hover a {
+    color: #333;
+  }
+  
+  #menus {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/menus_and_interfaces.jpg");
+  }
+  
+  #menus a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #menus:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #menus:hover a {
+    color: #333;
+  }
+  
+  #ambience {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/ambience.jpg");
+  }
+  
+  #ambience a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #ambience:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #ambience:hover a {
+    color: #333;
+  }
+  
+  #pills-tab {
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .nav-btn {
+    color: #f3f3f3;
+    font-weight: bold;
+  }
+  
+  .nav-btn:hover {
+    background-color: #3ff3a8;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .nav-btn:focus-within {
+    background-color: #3ff3a8;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  #vintage-anime {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/vintage.jpg");
+  }
+  
+  #vintage-anime a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #vintage-anime:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #vintage-anime:hover a {
+    color: #333;
+  }
+  
+  #futur-vehicles {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/futuristic.jpg");
+  }
+  
+  #futur-vehicles a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #futur-vehicles:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #futur-vehicles:hover a {
+    color: #333;
+  }
+  
+  #worship {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/worship.jpg");
+  }
+  
+  #worship a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #worship:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #worship:hover a {
+    color: #333;
+  }
+  
+  #vibrations {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/soundwaves.jpg");
+  }
+  
+  #vibrations a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #vibrations:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #vibrations:hover a {
+    color: #333;
+  }
+  
+  .tab-pane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  #tenet {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/tenet.jpg");
+  }
+  
+  #tenet a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #tenet:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #tenet:hover a {
+    color: #333;
+  }
+  
+  #westworld {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/westworld.jpg");
+  }
+  
+  #westworld a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #westworld:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #westworld:hover a {
+    color: #333;
+  }
+  
+  #the-revenant {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/the_revenant.jpg");
+  }
+  
+  #the-revenant a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #the-revenant:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #the-revenant:hover a {
+    color: #333;
+  }
+  
+  #mad-max {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/mad_max.jpg");
+  }
+  
+  #mad-max a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #mad-max:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #mad-max:hover a {
+    color: #333;
+  }
+  
+  #black-swan {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/black_swan.jpg");
+  }
+  
+  #black-swan a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #black-swan:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #black-swan:hover a {
+    color: #333;
+  }
+  
+  #baby-driver {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 140px;
+    background-image: url("images/baby_driver.jpg");
+  }
+  
+  #baby-driver a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #baby-driver:hover {
+    background-image: none;
+    background-color: #a3b0c9;
+    cursor: pointer;
+  }
+  
+  #baby-driver:hover a {
+    color: #333;
+  }
+  
+  .statistics {
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+  
+  .statistics * {
+    font-weight: bold;
+  }
+  
+  .statistics i {
+    font-size: 100px;
+  }
+  
+  .statistics p {
+    color: gray;
+  }
+  
+  #footer-section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  
+  #footer-section #left-section {
+    padding: 20% 0 20% 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #footer-section #left-section h2 {
+    opacity: 1;
+    font-weight: bold;
+    color: #F3f3f3;
+    font-size: 1.8em;
+  }
+  
+  #footer-section #right-section {
+    background-image: url("images/mixer.webp");
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #footer-section #right-section #brand-icons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10%;
+    grid-row-gap: 14%;
+    padding-left: 5%;
+    padding-top: 7%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0000003d), to(#000));
+    background-image: linear-gradient(to bottom, #0000003d, #000);
+    height: 100%;
+  }
+  
+  #footer-section #right-section #brand-icons .client {
+    opacity: 0.7;
+  }
+  
+  #footer-section #right-section #brand-icons .client img {
+    height: 60%;
+    width: 60%;
+  }
+  
+  #footer-section #bottom-section {
+    width: 100%;
+    padding: 30% 0 20% 0;
+  }
+  
+  #footer-section #bottom-section .subtitle {
+    font-weight: bold;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 2.7rem;
+  }
+  
+  #footer-section #bottom-section a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #3ff3a8;
+    font-weight: bold;
+  }
+  
+  #footer-section #bottom-section a:hover {
+    color: #099058;
+  }
+  
+  #footer-section #last-section {
+    padding-bottom: 10%;
+  }
+  
+  #footer-section #last-section * {
+    text-align: center;
+  }
+  
+  #footer-section #last-section h5 {
+    color: #F3f3f3;
+  }
+  
+  #footer-section #last-section a {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  #footer-section #last-section a:hover {
+    color: #676767;
+  }

@@ -1,0 +1,30 @@
+input[value="like"]{
+    background-color: blue;
+}
+body{
+    background-color: bisque;
+}
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-weight: bold;
+}
+input[value="comment"]{
+    background-color: rgb(123, 122, 118);
+}
+a{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-display: none;
+    font-style: oblique;
+
+}
+h1{
+    color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 1999;
+}

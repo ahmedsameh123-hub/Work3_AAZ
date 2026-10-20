@@ -1,0 +1,17 @@
+/* Selector, property,value  */
+/* p {
+    color: white;
+    background-color: black;
+}
+
+a {
+color: black;
+} */
+
+/* Cascading */
+
+p{
+    color:green;
+    font-size:8px;
+}
+

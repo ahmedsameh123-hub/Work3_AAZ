@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-like Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #createPostForm {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button.post-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .post h3 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .post p {
+            margin: 10px 0;
+            color: #6c757d;
+        }
+
+        .post-actions {
+            margin-top: 15px;
+        }
+
+        .post-actions button {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .comment-section {
+            margin-top: 15px;
+        }
+
+        .comment-section input {
+            width: 80%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .comment-section button {
+            background-color: #17a2b8;
+            color: white;
+            display: inline-block;
+        }
+
+        .comment-list {
+            margin-top: 15px;
+        }
+
+        .comment-list p {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .edit-area {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Posts Feed</h1>
+
+    <form id="createPostForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="body" placeholder="Body" required></textarea>
+        <button type="submit" class="post-btn">Post</button>
+    </form>
+
+    <div id="postList"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetchPosts();
+    });
+
+    function fetchPosts() {
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(posts => {
+                let postList = document.getElementById('postList');
+                postList.innerHTML = ''; 
+
+                posts.slice(0, 5).forEach(post => {
+                    let postElement = `
+                        <div class="post" id="post-${post.id}">
+                            <h3>${post.title}</h3>
+                            <p>${post.body}</p>
+                            <div class="post-actions">
+                                <button onclick="editPost(${post.id})">Edit Post</button>
+                                <button onclick="deletePost(${post.id})">Delete</button>
+                            </div>
+                            <div class="edit-area" id="edit-area-${post.id}">
+                                <input type="text" id="edit-title-${post.id}" value="${post.title}">
+                                <textarea id="edit-body-${post.id}">${post.body}</textarea>
+                                <button onclick="savePost(${post.id})">Save</button>
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" placeholder="Add a comment" id="comment-${post.id}">
+                                <button onclick="addComment(${post.id})">Comment</button>
+                            </div>
+                            <button onclick="showComments(${post.id})">Show Comments</button>
+                            <div class="comment-list" id="comments-${post.id}"></div>
+                        </div>`;
+                    postList.innerHTML += postElement;
+                });
+            });
+    }
+
+    document.getElementById('createPostForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const title = document.getElementById('title').value;
+        const body = document.getElementById('body').value;
+
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                title: title,
+                body: body,
+                userId: 1,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then(response => response.json())
+        .then(post => {
+            fetchPosts(); 
+        });
+    });
+
+    function deletePost(postId) {
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
+            method: 'DELETE',
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById(`post-${postId}`).remove(); 
+            }
+        });
+    }
+
+    function showComments(postId) {
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+            .then(response => response.json())
+            .then(comments => {
+                let commentSection = document.getElementById(`comments-${postId}`);
+                commentSection.innerHTML = ''; 
+
+                comments.forEach(comment => {
+                    let commentElement = `
+                        <p id="comment-${comment.id}">
+                            <strong>${comment.name}</strong>: ${comment.body}
+                            <button onclick="editComment(${comment.id}, '${comment.body}', ${postId})">Edit</button>
+                        </p>`;
+                    commentSection.innerHTML += commentElement;
+                });
+            });
+    }
+
+    function addComment(postId) {
+        const commentInput = document.getElementById(`comment-${postId}`).value;
+        if (commentInput) {
+            let commentSection = document.getElementById(`comments-${postId}`);
+            let newComment = `<p><strong>You</strong>: ${commentInput}</p>`;
+            commentSection.innerHTML += newComment;
+            document.getElementById(`comment-${postId}`).value = ''; 
+        }
+    }
+
+    function editPost(postId) {
+        const editArea = document.getElementById(`edit-area-${postId}`);
+        editArea.style.display = editArea.style.display === 'none' || editArea.style.display === '' ? 'block' : 'none';
+    }
+
+    function savePost(postId) {
+        const newTitle = document.getElementById(`edit-title-${postId}`).value;
+        const newBody = document.getElementById(`edit-body-${postId}`).value;
+
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
+            method: 'PUT',
+            body: JSON.stringify({
+                id: postId,
+                title: newTitle,
+                body: newBody,
+                userId: 1,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then(response => response.json())
+        .then(updatedPost => {
+            document.querySelector(`#post-${postId} h3`).innerText = updatedPost.title;
+            document.querySelector(`#post-${postId} p`).innerText = updatedPost.body;
+            document.getElementById(`edit-area-${postId}`).style.display = 'none';
+        });
+    }
+
+    function editComment(commentId, currentBody, postId) {
+        const newComment = prompt("Edit your comment:", currentBody);
+        if (newComment !== null) {
+            fetch(`https://jsonplaceholder.typicode.com/comments/${commentId}`, {
+                method: 'PUT',
+                body: JSON.stringify({
+                    body: newComment,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then(response => response.json())
+            .then(updatedComment => {
+                document.getElementById(`comment-${commentId}`).innerHTML = `<strong>You</strong>: ${updatedComment.body}`;
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

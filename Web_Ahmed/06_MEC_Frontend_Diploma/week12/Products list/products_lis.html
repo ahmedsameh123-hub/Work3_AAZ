@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+</head>
+<body>
+    <input type="text" id="search" placeholder="Search Products...">
+
+    <div id="product-container"></div>
+
+    <script>
+        const products = [
+            { title: "Headphones", description: "This is a description", price: 23 },
+            { title: "Keyboard", description: "This is a description", price: 50 },
+            { title: "Iphone", description: "This is a description", price: 1000 },
+            { title: "Laptop", description: "This is a description", price: 1500 },
+            { title: "Monitor", description: "This is a description", price: 300 },
+        ];
+
+        const productContainer = document.getElementById('product-container');
+
+        function displayProducts(products) {
+            productContainer.innerHTML = '';
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.style.margin = '10px';
+                productDiv.style.padding = '10px';
+                productDiv.style.border = '1px solid #ccc';
+                productDiv.innerHTML = `
+                    <h3>${product.title}</h3>
+                    <p>${product.description}</p>
+                    <p>Price: $${product.price}</p>
+                `;
+                productContainer.appendChild(productDiv);
+            });
+        }
+
+        displayProducts(products);
+
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredProducts = products.filter(product =>
+                product.title.toLowerCase().includes(searchTerm)
+            );
+            displayProducts(filteredProducts);
+        });
+    </script>
+</body>
+</html>

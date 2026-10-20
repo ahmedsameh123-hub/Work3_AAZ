@@ -1,0 +1,54 @@
+[
+  {
+    "trial": "A",
+    "plan_id": 1,
+    "scenario": "Genuine before/after change (Muscle Gain)",
+    "category": "Muscle Gain",
+    "before_pose": true,
+    "after_pose": true,
+    "overall_score": 72.3,
+    "plan_alignment_percent": 37.5,
+    "no_measurable_change": false,
+    "outcome": "Partial alignment",
+    "error": null
+  },
+  {
+    "trial": "B",
+    "plan_id": 2,
+    "scenario": "Identical photos (no physical change)",
+    "category": "Strength",
+    "before_pose": true,
+    "after_pose": true,
+    "overall_score": 50.0,
+    "plan_alignment_percent": 0.0,
+    "no_measurable_change": true,
+    "outcome": "Stable — no measurable change",
+    "error": null
+  },
+  {
+    "trial": "C",
+    "plan_id": 3,
+    "scenario": "Invalid after photo (solid black)",
+    "category": "Strength",
+    "before_pose": true,
+    "after_pose": false,
+    "overall_score": null,
+    "plan_alignment_percent": null,
+    "no_measurable_change": false,
+    "outcome": "Rejected by pose guard",
+    "error": "Could not detect body pose in AFTER photo. Use a clear full-body front photo."
+  },
+  {
+    "trial": "D",
+    "plan_id": 4,
+    "scenario": "Invalid after photo (unsuitable framing)",
+    "category": "Strength",
+    "before_pose": true,
+    "after_pose": false,
+    "overall_score": null,
+    "plan_alignment_percent": null,
+    "no_measurable_change": false,
+    "outcome": "Rejected by pose guard",
+    "error": "Could not detect body pose in AFTER photo. Use a clear full-body front photo."
+  }
+]

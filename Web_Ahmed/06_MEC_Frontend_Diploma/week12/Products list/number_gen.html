@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+</head>
+<body>
+    <div id="number-container"></div>
+
+    <script>
+        const container = document.getElementById('number-container');
+
+        for (let i = 0; i <= 100; i++) {
+            const numberDiv = document.createElement('div');
+            numberDiv.textContent = i;
+            numberDiv.style.padding = '15px';
+            numberDiv.style.margin = '50px';
+            numberDiv.style.color = 'white';
+            numberDiv.style.width = '35px';
+            numberDiv.style.fontSize = '50px'
+            numberDiv.style.backgroundColor = i % 2 === 0 ? 'red' : 'blue';
+            container.appendChild(numberDiv);
+        }
+    </script>
+</body>
+</html>

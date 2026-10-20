@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Game</title>
+</head>
+
+<body>
+    <script>
+        function battleGame(names) {
+            const randomIndex1 = Math.floor(Math.random() * names.length);
+            let randomIndex2;
+            do {
+                randomIndex2 = Math.floor(Math.random() * names.length);
+            } while (randomIndex1 === randomIndex2);
+
+            return [names[randomIndex1], names[randomIndex2]];
+        }
+
+        const names = ["Ahmed", "Islam", "Sandra", "Fatma"];

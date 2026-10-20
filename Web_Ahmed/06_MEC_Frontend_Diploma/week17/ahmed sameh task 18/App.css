@@ -1,0 +1,28 @@
+.App {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .featured-courses, .top-categories, .testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .course-card, .category-card, .testimonial-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  

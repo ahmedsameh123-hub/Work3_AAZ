@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Search</title>
+</head>
+
+<body>
+    <script>
+        function charSearch(text, char) {
+            const indexes = [];
+            for (let i = 0; i < text.length; i++) {
+                if (text[i] === char) {
+                    indexes.push(i);
+                }
+            }
+            return indexes;
+        }
+
+        const text = "This is JavaScript";
+        const char = "i";
+        document.write("Character positions: " + charSearch(text, char).join(', ')); // Output: [2, 5, 15]
+
+        // Bonus: Accept an array of characters
+        function charsSearch(text, chars) {
+            return chars.map(char => charSearch(text, char));
+        }
+
+        const chars = ["i", "a"];
+        const result = charsSearch(text, chars).map((indexes, idx) => `Character '${chars[idx]}' positions: ` + indexes.join(', '));
+        document.write("<br>" + result.join('<br>')); // Output: [2, 5, 15], [9, 11]
+    </script>
+</body>
+
+</html>

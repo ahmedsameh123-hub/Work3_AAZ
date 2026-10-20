@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* الأزرق الداكن */
+    color: #ffffff;
+}
+
+header {
+    background-color: #011f3f; /* الأزرق الداكن */
+    padding: 10px;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+    color: #ffdc00; /* الأصفر */
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.movie-grid img {
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#movie-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#movie-details button {
+    background-color: #ff4136; /* الأحمر الداكن */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+#toggle-theme {
+    background-color: #ffdc00; /* الأصفر */
+    color: #001f3f; /* الأزرق الداكن */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

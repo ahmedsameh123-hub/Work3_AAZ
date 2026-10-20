@@ -1,0 +1,16 @@
+                        .product-wrapper {
+                            display: flex;
+                            align-items: center;
+                            gap: 2rem;
+                            border-bottom: 2px solid #e4e4e4;
+                        }
+                        
+                        .selected-product-wrapper {
+                            margin: 2rem;
+                            padding: 1rem;
+                            border: 2px solid #e4e4e4;
+                        }
+                        
+                        #total-price {
+                            font-size: 24px;
+                        }

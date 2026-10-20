@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+    </div>
+    <div>
+        <label for="course">Course:</label>
+        <input type="text" id="course">
+    </div>
+    <button id="registerBtn">Register</button>
+
+    <div id="thank-you-message"></div>
+
+    <script>
+        const registerBtn = document.getElementById('registerBtn');
+
+        registerBtn.addEventListener('click', function () {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const course = document.getElementById('course').value;
+
+            const messageDiv = document.getElementById('thank-you-message');
+            messageDiv.innerHTML = `
+                <h2>Thank you for registering!</h2>
+                <p>Name: ${name}</p>
+                <p>Email: ${email}</p>
+                <p>Course: ${course}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students Admission</title>
+</head>
+
+<body>
+    <script>
+        var faculty = prompt("Enter your faculty:");
+
+        if (faculty === "FCI") {
+            alert("You are eligible to programming tracks");
+        } else if (faculty === "Engineering") {
+            alert("You are eligible to Network tracks");
+        } else if (faculty === "Commerce") {
+            alert("You are eligible to ERP tracks");
+        } else {
+            alert("You are eligible for SW Fundamentals tracks");
+        }
+
+        switch (faculty) {
+            case "FCI":
+                alert("You are eligible to programming tracks");
+                break;
+            case "Engineering":
+                alert("You are eligible to Network tracks");
+                break;
+            case "Commerce":
+                alert("You are eligible to ERP tracks");
+                break;
+            default:
+                alert("You are eligible for SW Fundamentals tracks");
+                break;
+        }
+    </script>
+</body>
+
+</html>

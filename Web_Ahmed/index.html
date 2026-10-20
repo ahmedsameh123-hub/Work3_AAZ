@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أحمد سامح | معرض المشاريع المتكاملة (AAZ Team)</title>
+  <meta name="description" content="المعرض المتكامل لمشاريع أحمد سامح — تطبيقات فلاتر، مواقع الويب، مشاريع الذكاء الاصطناعي، والشهادات المعتمدة ضمن فريق AAZ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glow & Particles -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="brand">
+        <span class="brand-badge">AAZ Team</span>
+        <span class="brand-name">أحمد سامح <span>/ Ahmed.dev</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#stats" class="nav-link">الإحصائيات</a>
+        <a href="#featured" class="nav-link">المشروع الأبرز (TrainMate)</a>
+        <a href="#projects" class="nav-link">معرض المشاريع</a>
+        <a href="#certificates" class="nav-link">الشهادات</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" title="تبديل المظهر" aria-label="Toggle theme">
+          🌙
+        </button>
+        <a href="https://github.com/ahmedsameh123-hub/Work3_AAZ" target="_blank" class="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          مستودع GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag">
+          <span class="status-dot"></span> جاهز للدمج والإطلاق مع فريق AAZ
+        </div>
+        <h1 class="hero-title">
+          أهلاً، أنا <span class="gradient-text">أحمد سامح</span>
+          <br>
+          <span class="subtitle-text">مطور تطبيقات Flutter وواجهات الويب والذكاء الاصطناعي</span>
+        </h1>
+        <p class="hero-desc">
+          مرحباً بكم في محفظتي الرقمية المتكاملة. هنا تجدون كافة المشاريع التي أنجزتها في برمجة تطبيقات الموبايل بفلاتر، صفحات الهبوط وتطبيقات الويب التفاعلية، حلول الذكاء الاصطناعي الطبية، والشهادات المهنية المعتمدة دولياً. خطوتنا القادمة مع زياد وأدهم هي إطلاق شركتنا التقنية المتكاملة لإنشاء وصيانة المواقع والتطبيقات!
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary">استعراض المشاريع والروابط 🚀</a>
+          <a href="#featured" class="btn-secondary">مشروع التخرج المتقدم (TrainMate) 📱</a>
+        </div>
+      </div>
+      <div class="hero-avatar-box">
+        <div class="avatar-card">
+          <div class="avatar-frame">
+            <img src="05_Screenshots_and_Media/Profile_and_Branding/profile.jpg" alt="أحمد سامح - Ahmed Sameh" class="avatar-img" onerror="this.src='05_Screenshots_and_Media/Profile_and_Branding/cover.jpg'">
+          </div>
+          <div class="avatar-info">
+            <div class="avatar-name">أحمد سامح بسيوني</div>
+            <div class="avatar-role">Flutter & Front-End Software Engineer</div>
+            <div class="team-tag">شريك مؤسس في AAZ Tech Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section id="stats" class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-num gradient-text" id="statWeb">9+</div>
+        <div class="stat-label">مشاريع ويب وصفحات هبوط</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num gradient-text">16</div>
+        <div class="stat-label">شاشة تطبيق فلاتر مصممة</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num gradient-text">14</div>
+        <div class="stat-label">شهادة معتمدة (AWS, NVIDIA, NTI)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num gradient-text">100%</div>
+        <div class="stat-label">جاهزية للرفع والانطلاق التقني</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project: TrainMate -->
+  <section id="featured" class="featured-section">
+    <div class="container">
+      <div class="section-badge">مشروع التخرج الأبرز</div>
+      <h2 class="section-title">TrainMate — المساعد الرياضي الذكي</h2>
+      <p class="section-subtitle">تطبيق موبايل متكامل بتقنية Flutter وذكاء اصطناعي فوري لتتبع حركة التمارين وعد التكرارات عبر كاميرا الهاتف</p>
+
+      <div class="featured-grid">
+        <div class="featured-content">
+          <div class="featured-badges">
+            <span class="chip-badge flutter">Flutter Mobile</span>
+            <span class="chip-badge ml">TensorFlow & TFLite</span>
+            <span class="chip-badge python">FastAPI Backend</span>
+            <span class="chip-badge ai">MediaPipe Vision</span>
+          </div>
+          <h3 class="featured-h3">تطبيق فلاتر المتقدم مع نموذج تصنيف حركي فوري</h3>
+          <p class="featured-desc">
+            قمت بقيادة تطوير تطبيق Flutter كاملاً وتدريب وتشغيل موديل كشف التمارين الرياضية على الهاتف الذكي (On-Device Inference) بالتعاون مع فريق العمل. يتضمن التطبيق:
+          </p>
+          <ul class="feature-bullets">
+            <li><strong>تتبع حركي لحظي (Live Pose Tracking):</strong> كشف مفاصل المتدرب وتنبيهه لحظياً في حال الخطأ.</li>
+            <li><strong>عدّاد التكرارات الآلي (Rep Counter HUD):</strong> حساب التكرارات بدقة وتسجيل السعرات المحروقة.</li>
+            <li><strong>مدرب ذكي تفاعلي (AI Chatbot):</strong> شات مدمج يقدم نصائح تدريبية وتغذوية مخصصة.</li>
+            <li><strong>دعم كامل للغة العربية:</strong> واجهات عربية متكاملة تدعم اتجاه RTL وثيم داكن عصري.</li>
+          </ul>
+
+          <div class="featured-actions">
+            <button class="btn-primary" onclick="openScreenshotModal('05_Screenshots_and_Media/Mobile_Flutter_Previews/07_exercise_live.png', 'TrainMate Live Pose Tracking')">
+              👁️ معاينة التتبع المباشر
+            </button>
+            <button class="btn-secondary" onclick="openFeaturedGallery()">
+              📱 استعراض كافة الـ 16 شاشة
+            </button>
+            <a href="01_Flutter_Projects/README.md" class="btn-outline">
+              📖 قراءة التوثيق التقني
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-mockup">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <img id="mockupScreen" src="05_Screenshots_and_Media/Mobile_Flutter_Previews/03_home.png" alt="TrainMate App Screen" class="phone-screen" onclick="nextMockupScreen()">
+            <div class="mockup-hint">اضغط على الشاشة للتنقل بين واجهات التطبيق 👆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-badge">كافة الأعمال المنجزة</div>
+          <h2 class="section-title">معرض المشاريع والتطبيقات</h2>
+          <p class="section-subtitle">تصفح المشاريع مع روابط المعاينة الحية، لقطات الشاشات، والتقنيات المستخدمة</p>
+        </div>
+        <!-- Filters -->
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all">🌟 الكل (All)</button>
+          <button class="filter-btn" data-filter="web">💻 مشاريع الويب (Web)</button>
+          <button class="filter-btn" data-filter="flutter">📱 فلاتر (Flutter)</button>
+          <button class="filter-btn" data-filter="ai">🧠 ذكاء اصطناعي (AI/ML)</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Card: MovieBox -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/moviebox.png" alt="MovieBox Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/moviebox.png', 'MovieBox — منصة تصفح الأفلام')">
+            <span class="card-category-chip web">Web Application</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">MovieBox — منصة الأفلام الذكية</h3>
+            <p class="card-desc">تطبيق ويب تفاعلي متقدم للبحث عن أحدث الأفلام العالمية، عرض التقييمات والبوسترات وصفحة تفاصيل الفيلم بالاعتماد على REST API.</p>
+            <div class="card-tags">
+              <span>JavaScript ES6+</span>
+              <span>Movie API</span>
+              <span>CSS3 Flexbox</span>
+              <span>Dynamic Modal</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/projects/moviebox/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/moviebox.png', 'MovieBox')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: Easybank -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/easybank.png" alt="Easybank Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/easybank.png', 'Easybank Landing Page')">
+            <span class="card-category-chip web">Landing Page</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Easybank — صفحة بنك رقمي عصري</h3>
+            <p class="card-desc">صفحة هبوط فائقة التجاوب للخدمات المصرفية الرقمية بالجيل القادم، بتصميم تفاعلي وبطاقات متدرجة ورسومات فيكتور جذابة.</p>
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>Responsive CSS</span>
+              <span>Mobile Menu</span>
+              <span>SVG Icons</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/projects/easybank/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/easybank.png', 'Easybank')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: Fiber -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/fiber.png" alt="Fiber Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/fiber.png', 'Fiber Portfolio Builder')">
+            <span class="card-category-chip web">SaaS Landing</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fiber — منصة بناء البورتفوليو</h3>
+            <p class="card-desc">صفحة هبوط احترافية لخدمة سحابية تساعد المطورين والمصممين في إطلاق مواقع معارض أعمالهم مع قسم للأسعار وآراء العملاء.</p>
+            <div class="card-tags">
+              <span>Modern CSS</span>
+              <span>Grid & Flex</span>
+              <span>Testimonials</span>
+              <span>Clean UI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/projects/fiber/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/fiber.png', 'Fiber')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: InsulinSense -->
+        <div class="project-card" data-category="ai">
+          <div class="card-thumb-wrapper">
+            <div class="ai-card-cover">
+              <span class="ai-emoji">🩺</span>
+              <div class="ai-cover-title">InsulinSense AI</div>
+            </div>
+            <span class="card-category-chip ai">AI & Healthcare</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">InsulinSense — نظام السكري والتحاليل</h3>
+            <p class="card-desc">منظومة ذكية متكاملة لتشخيص مقاومة الإنسولين، قراءة تقارير المعامل الطبية بالرؤية الحاسوبية (OCR)، ومحرك لتخصيص الوجبات الغذائية.</p>
+            <div class="card-tags">
+              <span>React.js</span>
+              <span>Python Flask</span>
+              <span>Scikit-Learn ML</span>
+              <span>OCR Vision</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="03_AI_and_FullStack_Projects/README.md" class="card-btn primary">📖 تفاصيل المشروع</a>
+            <a href="03_AI_and_FullStack_Projects/InsulinSense/Presentation/InsulinSense_Final_Presentation.pptx" class="card-btn secondary">📊 العرض النهائي</a>
+          </div>
+        </div>
+
+        <!-- Card: E-Commerce Store -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/store.png" alt="Store Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/store.png', 'E-Commerce Store')">
+            <span class="card-category-chip web">E-Commerce</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">E-Commerce Mini Store — متجر إلكتروني</h3>
+            <p class="card-desc">واجهة متجر تسوق تفاعلية تتيح استعراض السلع، إضافة المنتجات لسلة التسوق، وتحديث الإجمالي ديناميكياً.</p>
+            <div class="card-tags">
+              <span>JavaScript DOM</span>
+              <span>Cart State</span>
+              <span>Interactive UI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/projects/store/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/store.png', 'E-Commerce Store')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: Facebook Feed -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/facebook-feed.png" alt="Feed Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/facebook-feed.png', 'Facebook Feed Clone')">
+            <span class="card-category-chip web">Social Web</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Facebook Feed Clone — فيد التفاعل</h3>
+            <p class="card-desc">محاكاة تفاعلية لمنشورات السوشيال ميديا مع إمكانية التفاعل بالإعجاب والتعليقات الحية وتخطيط متجاوب.</p>
+            <div class="card-tags">
+              <span>Interactive JS</span>
+              <span>Events Handling</span>
+              <span>Responsive CSS</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/projects/facebook-feed/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/facebook-feed.png', 'Facebook Feed')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: Ahmed Portfolio -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Web_Previews/portfolio.png" alt="Portfolio Preview" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/portfolio.png', 'Ahmed Sameh Portfolio')">
+            <span class="card-category-chip web">Portfolio</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ahmed Sameh Portfolio — الموقع الشخصي</h3>
+            <p class="card-desc">الموقع الشخصي للمطور، يعرض المهارات، مسار التعليم والتدريب، ومعرضاً موسعاً لكافة مشاريع الويب المنفذة.</p>
+            <div class="card-tags">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Semantic SEO</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://ahmedsameh123-hub.github.io/ahmed-sameh-portfolio/" target="_blank" class="card-btn primary">🔗 معاينة حية</a>
+            <button class="card-btn secondary" onclick="openScreenshotModal('05_Screenshots_and_Media/Web_Previews/portfolio.png', 'Ahmed Sameh Portfolio')">🔍 اسكرين شوت</button>
+          </div>
+        </div>
+
+        <!-- Card: React Movie App -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <div class="ai-card-cover react-cover">
+              <span class="ai-emoji">⚛️</span>
+              <div class="ai-cover-title">React 18 Movie App</div>
+            </div>
+            <span class="card-category-chip react">React Single Page</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">React 18 Movie App — تطبيق سينما متكامل</h3>
+            <p class="card-desc">تطبيق ويب سينمائي مبني بـ React 18 مع مكتبات Axios و React Router و Bootstrap للتنقل السلس والبحث اللحظي.</p>
+            <div class="card-tags">
+              <span>React 18</span>
+              <span>React Router v6</span>
+              <span>Axios API</span>
+              <span>Bootstrap 5</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="02_Web_Projects/React_Movie_App/" class="card-btn primary">📁 مجلد الكود</a>
+            <a href="02_Web_Projects/README.md#7-️-react-movie-app--تطبيق-أفلام-متكامل-بـ-react" class="card-btn secondary">📖 طريقة التشغيل</a>
+          </div>
+        </div>
+
+        <!-- Card: Jana Celebration -->
+        <div class="project-card" data-category="web">
+          <div class="card-thumb-wrapper">
+            <div class="ai-card-cover jana-cover">
+              <span class="ai-emoji">🎉</span>
+              <div class="ai-cover-title">Celebration Web App</div>
+            </div>
+            <span class="card-category-chip web">Interactive App</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Jana Celebration — منصة التخرج التفاعلية</h3>
+            <p class="card-desc">موقع احتفالي تفاعلي يتضمن مشغل صوتي، سلايدر مقارنة الصور قبل وبعد (Before/After)، وبطاقة خدش تفاعلية ومعرض ذكريات.</p>
+            <div class="card-tags">
+              <span>FastAPI Python</span>
+              <span>HTML5 Audio</span>
+              <span>Canvas Scratch</span>
+              <span>CSS Animations</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="02_Web_Projects/Jana_Graduation_Site/" class="card-btn primary">📁 ملفات المشروع</a>
+            <a href="02_Web_Projects/README.md" class="card-btn secondary">📖 الدليل الكامل</a>
+          </div>
+        </div>
+
+        <!-- Card: TrainMate (Flutter) -->
+        <div class="project-card" data-category="flutter">
+          <div class="card-thumb-wrapper">
+            <img src="05_Screenshots_and_Media/Mobile_Flutter_Previews/04_workout_hub.png" alt="TrainMate Flutter" class="card-thumb" onclick="openScreenshotModal('05_Screenshots_and_Media/Mobile_Flutter_Previews/04_workout_hub.png', 'TrainMate Workout Hub')">
+            <span class="card-category-chip flutter">Flutter App</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">TrainMate Mobile App — تطبيق فلاتر الرياضي</h3>
+            <p class="card-desc">تطبيق هاتف ذكي بتتبع حركي مباشر، جداول تمارين مخصصة، شات بوت مدرب ذكي، ومقارنة تغيرات الجسم مع دعم كامل للغة العربية.</p>
+            <div class="card-tags">
+              <span>Flutter 3</span>
+              <span>Dart</span>
+              <span>On-device ML</span>
+              <span>Arabic RTL</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="card-btn primary" onclick="openFeaturedGallery()">📱 معرض الـ 16 شاشة</button>
+            <a href="01_Flutter_Projects/README.md" class="card-btn secondary">📖 التوثيق الكامل</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates-section">
+    <div class="container">
+      <div class="section-badge">المسار الأكاديمي والمهني</div>
+      <h2 class="section-title">الشهادات والاعتمادات الرسمية</h2>
+      <p class="section-subtitle">شهادات معتمدة دولياً ومحلياً من كبرى المؤسسات والشركات التقنية</p>
+
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-issuer">MEC Academy</div>
+          <h4 class="cert-title">Front-End Web Development Diploma</h4>
+          <p class="cert-field">تطوير واجهات الويب (18 أسبوعاً تدريبياً مكثفاً)</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_Front_End_MEC.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <div class="cert-issuer">NTI (المعهد القومي للاتصالات)</div>
+          <h4 class="cert-title">Big Data Engineering & Analytics</h4>
+          <p class="cert-field">هندسة وتحليل البيانات الضخمة</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basiouny_Big_Data_NTI.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📡</div>
+          <div class="cert-issuer">Huawei ICT Academy</div>
+          <h4 class="cert-title">Big Data Specialist</h4>
+          <p class="cert-field">تقنيات معالجة البيانات الضخمة المعتمدة</p>
+          <a href="04_Certificates_and_Credentials/Images/Ahmed_Sameh_Basuny_Big_Data_Huawei.png" target="_blank" class="cert-link">🖼️ عرض الشارة (PNG)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-issuer">Amazon Web Services (AWS)</div>
+          <h4 class="cert-title">AWS Cloud Foundations</h4>
+          <p class="cert-field">أسس وخدمات الحوسبة السحابية</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_Cloud_Foundations_AWS.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-issuer">Amazon Web Services (AWS)</div>
+          <h4 class="cert-title">AWS Machine Learning</h4>
+          <p class="cert-field">نماذج تعلم الآلة السحابية</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_Machine_Learning_AWS.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🧠</div>
+          <div class="cert-issuer">NVIDIA Deep Learning Institute</div>
+          <h4 class="cert-title">Deep Learning Fundamentals</h4>
+          <p class="cert-field">الشبكات العصبية والتعلم العميق</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_Deep_Learning_NVIDIA.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🏦</div>
+          <div class="cert-issuer">Commercial International Bank (CIB)</div>
+          <h4 class="cert-title">Summer Internship Program</h4>
+          <p class="cert-field">التدريب البنكي والأنظمة المصرفية الرقمية</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_CIB_Internship.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">💡</div>
+          <div class="cert-issuer">جامعة عين شمس (ASU)</div>
+          <h4 class="cert-title">Innovation & Entrepreneurship</h4>
+          <p class="cert-field">ريادة الأعمال والحلول المبتكرة</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basouny_Innovation_ASU.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">💼</div>
+          <div class="cert-issuer">HP LIFE</div>
+          <h4 class="cert-title">AI for Business & Data Science</h4>
+          <p class="cert-field">توظيف الذكاء الاصطناعي وعلم البيانات في الشركات</p>
+          <a href="04_Certificates_and_Credentials/PDFs/Ahmed_Sameh_Basuny_AI_for_Business_HP.pdf" target="_blank" class="cert-link">📄 عرض الشهادة (PDF)</a>
+        </div>
+
+      </div>
+
+      <div class="certs-footer-action">
+        <a href="04_Certificates_and_Credentials/README.md" class="btn-outline">
+          📜 عرض الجدول التفصيلي لجميع الـ 14 شهادة معتمدة
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team & Vision Banner -->
+  <section class="vision-section">
+    <div class="container vision-card">
+      <div class="vision-content">
+        <span class="vision-badge">الخطوة القادمة 🚀</span>
+        <h2 class="vision-title">فريق AAZ التقني (أحمد، أدهم، زياد)</h2>
+        <p class="vision-desc">
+          هذا المجلد جاهز بنسبة 100% ليتم ربطه بموقع شركتنا التقنية المشتركة لتقديم خدمات بناء وصيانة مواقع الويب، تطبيقات فلاتر، وحلول الذكاء الاصطناعي. مستعدون للانطلاق على السوشيال ميديا ورفع كافة الملفات على GitHub!
+        </p>
+        <div class="team-avatars">
+          <div class="team-member active">
+            <span class="member-dot"></span>
+            <strong>أحمد سامح</strong> (Flutter, Web, AI)
+          </div>
+          <div class="team-member">
+            <span class="member-dot upcoming"></span>
+            <strong>أدهم علام</strong> (Web & Flutter)
+          </div>
+          <div class="team-member">
+            <span class="member-dot upcoming"></span>
+            <strong>زياد</strong> (Web & Mobile)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © 2026 <strong>AAZ Team</strong> — تطوير <strong>أحمد سامح</strong> | جميع الحقوق محفوظة
+      </div>
+      <div class="footer-links">
+        <a href="README.md">الدليل التوثيقي الرئيسي</a>
+        <a href="02_Web_Projects/README.md">مشاريع الويب</a>
+        <a href="01_Flutter_Projects/README.md">تطبيق فلاتر</a>
+        <a href="04_Certificates_and_Credentials/README.md">الشهادات</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Screenshots -->
+  <div id="screenshotModal" class="modal-overlay" onclick="closeScreenshotModal(event)">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeScreenshotModalDirect()">&times;</button>
+      <h3 id="modalTitle" class="modal-title">معاينة الصورة</h3>
+      <div class="modal-img-wrapper">
+        <img id="modalImg" src="" alt="Screenshot Full View" class="modal-img">
+      </div>
+      <div class="modal-nav">
+        <button id="modalPrev" class="modal-nav-btn" onclick="prevModalImg()">السابق ◀</button>
+        <span id="modalCounter" class="modal-counter">1 / 1</span>
+        <button id="modalNext" class="modal-nav-btn" onclick="nextModalImg()">التالي ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

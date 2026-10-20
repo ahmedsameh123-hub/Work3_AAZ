@@ -1,0 +1,54 @@
+/* src/MenuApp.css */
+.menu-container {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .menu-categories {
+    margin-bottom: 20px;
+  }
+  
+  .menu-categories button {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .menu-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item .price {
+    font-size: 16px;
+    color: #888;
+  }
+  

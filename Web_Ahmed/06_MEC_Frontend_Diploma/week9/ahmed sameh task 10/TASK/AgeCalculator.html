@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("Enter your name:");
+        var age = parseInt(prompt("Enter your age:"));
+
+        var birthYear = new Date().getFullYear() - age;
+        var ageInDays = age * 365;
+        var ageInHours = ageInDays * 24;
+        var ageInMinutes = ageInHours * 60;
+
+        document.write("<table border='1'><tr><th>Name</th><th>Birth Year</th><th>Age in Days</th><th>Age in Hours</th><th>Age in Minutes</th></tr>");
+        document.write("<tr><td>" + name + "</td><td>" + birthYear + "</td><td>" + ageInDays + "</td><td>" + ageInHours + "</td><td>" + ageInMinutes + "</td></tr></table>");
+    </script>
+</body>
+
+</html>

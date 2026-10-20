@@ -1,0 +1,157 @@
+
+
+
+
+/* 
+
+Name : Ahmed Sameh Basuny 
+Id : 222100081 
+Cource : CSE211 WEb Programming 
+Assignment : Course Project 
+Date : 7 / 1 / 2025
+Description : The purpose of this oss is to style the page(s) in course project
+
+*/
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: #fff;
+}
+h1, h2 {
+    color: #FFD700;
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+.logo span {
+    color: #1E90FF;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+button.search-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+button.search-btn:hover {
+    background-color: #FFC107;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin-top: 40px;
+}
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.movie-list div {
+    background-color: #1E2A38;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 180px;
+}
+.movie-list div:hover {
+    transform: scale(1.05);
+}
+.movie-list img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFD700;
+}
+.movie-list h3 {
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #FFD700;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+nav {
+    background-color: #243B55;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #f0f8ff;
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+footer a {
+    color: #42b4d6;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

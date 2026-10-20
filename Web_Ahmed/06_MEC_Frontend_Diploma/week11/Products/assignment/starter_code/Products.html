@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>Products</h1>
+    <div>
+        <label for="search-field">Search:</label>
+        <input type="text" id="search-field">
+    </div>
+    <div>
+        <label for="min-price">Min Price:</label>
+        <input type="number" id="min-price">
+    </div>
+    <div>
+        <label for="max-price">Max Price:</label>
+        <input type="number" id="max-price">
+    </div>
+    <div>
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+            <option value="default">Default</option>
+            <option value="price-low-to-high">Price Low to High</option>
+            <option value="price-high-to-low">Price High to Low</option>
+        </select>
+    </div>
+    <div>
+        <label for="discount-checkbox">Discount Only:</label>
+        <input type="checkbox" id="discount-checkbox">
+    </div>
+    <div id="product-container"></div>
+    <div class="selected-product-wrapper">
+        <h3>Selected Products</h3>
+        <ul id="selected-products"></ul>
+        <button id="checkout-btn">Checkout</button>
+        <div id="total-price"></div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/renderer.js"></script>
+</body>
+</html>

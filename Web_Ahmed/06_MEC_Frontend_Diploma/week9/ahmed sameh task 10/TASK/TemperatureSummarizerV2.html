@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Summarizer V2</title>
+</head>
+
+<body>
+    <script>
+        var temperature = parseFloat(prompt("Enter the temperature:"));
+        var actualFeel = parseFloat(prompt("Enter the actual feel:"));
+
+        if (temperature >= 25 && temperature <= 30 && actualFeel >= 25 && actualFeel <= 30) {
+            alert("Normal");
+        } else if (temperature < 25 && actualFeel < 25) {
+            alert("Cold");
+        } else if (temperature > 30 && actualFeel > 30) {
+            alert("HOT");
+        } else {
+            alert("Ambiguous, Can’t summarize");
+        }
+    </script>
+</body>
+
+</html>

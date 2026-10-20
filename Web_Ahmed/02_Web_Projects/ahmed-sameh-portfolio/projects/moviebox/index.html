@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+<!-- 
+    
+
+Name : Ahmed Sameh Basuny 
+Id : 222100081 
+Cource : CSE211 WEb Programming 
+Assignment : Course Project 
+Date : 7 / 1 / 2025
+Description : The purpose of this oss is to style the page(s) in course project
+
+
+-->
+
+    <header>
+        <div class="logo">
+            <h1>🎬 Movie<span>Box</span>(Made with all love by <span>Ahmed sameh</span>)</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a movie..." />
+            <button class="search-btn" onclick="searchMovies()">Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact Me</a></li>
+            <li><a href="pages/registration.html">Register</a></li>
+            <li><a href="pages/thank.html">Thx</a></li>
+            <li><a href="https://www.gu.edu">GU Website</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="featuredMovies">
+            <h2>Featured Movies</h2>
+            <div class="movie-list" id="featured"></div>
+        </section>
+
+        <section id="topRatedMovies">
+            <h2>Top Rated Movies</h2>
+            <div class="movie-list" id="topRated"></div>
+        </section>
+
+        <section id="popularMovies">
+            <h2>Popular Movies</h2>
+            <div class="movie-list" id="popular"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Movies World. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

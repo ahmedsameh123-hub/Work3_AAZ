@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.bing.com/images/search?view=detailV2&ccid=wtYTPwYf&id=6A86C6D51F4288555589DC9FCEAA7E4F85D9479F&thid=OIP.wtYTPwYfjAQ0ksYpxzUAFwHaHa&mediaurl=https%3A%2F%2Fc0.klipartz.com%2Fpngpicture%2F881%2F56%2Fgratis-png-rollo-de-pelicula-iconos-de-la-computadora-del-cine-guionista-icono-de-la-pelicula.png&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.c2d6133f061f8c043492c629c7350017%3Frik%3Dn0fZhU9%252bqs6f3A%26pid%3DImgRaw%26r%3D0&exph=890&expw=890&q=%D8%A7%D9%8A%D9%82%D9%88%D9%86%D9%87+%D9%81%D9%8A%D9%84%D9%85&simid=608004698111741400&FORM=IRPRST&ck=DF10B53761FF30E2B2E391C6F908D07F&selectedIndex=6&itb=0&cw=1334&ch=752&ajaxhist=0&ajaxserp=0">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🎬 Movie<span>Box</span>(Made with all love by <span>Ahmed sameh</span>)</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a movie..." />
+            <button class="search-btn" onclick="searchMovies()">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="featuredMovies">
+            <h2>Featured Movies</h2>
+            <div class="movie-list" id="featured"></div>
+        </section>
+
+        <section id="topRatedMovies">
+            <h2>Top Rated Movies</h2>
+            <div class="movie-list" id="topRated"></div>
+        </section>
+
+        <section id="popularMovies">
+            <h2>Popular Movies</h2>
+            <div class="movie-list" id="popular"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

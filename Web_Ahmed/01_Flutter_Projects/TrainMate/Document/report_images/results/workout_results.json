@@ -1,0 +1,140 @@
+{
+  "account": "lam503504@gmail.com",
+  "device": "Samsung SM-A556E (USB debugging)",
+  "session_count": 10,
+  "total_reps": 94,
+  "total_duration_sec": 309,
+  "mode": "manual_exercise",
+  "sessions": [
+    {
+      "id": 1,
+      "exercise": "push-up",
+      "reps": 13,
+      "duration_sec": 43,
+      "sets": 3,
+      "kcal": 1.63,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:05:21"
+    },
+    {
+      "id": 2,
+      "exercise": "squat",
+      "reps": 11,
+      "duration_sec": 42,
+      "sets": 3,
+      "kcal": 2.05,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:07:15"
+    },
+    {
+      "id": 3,
+      "exercise": "barbell biceps curl",
+      "reps": 10,
+      "duration_sec": 37,
+      "sets": 3,
+      "kcal": 1.25,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:09:28"
+    },
+    {
+      "id": 4,
+      "exercise": "shoulder press",
+      "reps": 6,
+      "duration_sec": 22,
+      "sets": 3,
+      "kcal": 0.81,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:10:48"
+    },
+    {
+      "id": 5,
+      "exercise": "push-up",
+      "reps": 11,
+      "duration_sec": 31,
+      "sets": 3,
+      "kcal": 1.15,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:13:42"
+    },
+    {
+      "id": 6,
+      "exercise": "squat",
+      "reps": 6,
+      "duration_sec": 26,
+      "sets": 3,
+      "kcal": 1.19,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:14:52"
+    },
+    {
+      "id": 7,
+      "exercise": "squat",
+      "reps": 7,
+      "duration_sec": 25,
+      "sets": 3,
+      "kcal": 1.16,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:15:49"
+    },
+    {
+      "id": 8,
+      "exercise": "shoulder press",
+      "reps": 9,
+      "duration_sec": 33,
+      "sets": 3,
+      "kcal": 1.26,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:17:24"
+    },
+    {
+      "id": 9,
+      "exercise": "barbell biceps curl",
+      "reps": 10,
+      "duration_sec": 37,
+      "sets": 3,
+      "kcal": 1.25,
+      "source": "manual_exercise",
+      "created_at": "2026-06-16 19:18:53"
+    },
+    {
+      "id": 10,
+      "exercise": "barbell biceps curl",
+      "reps": 11,
+      "duration_sec": 13,
+      "sets": 1,
+      "kcal": 0.4,
+      "source": "manual_exercise",
+      "created_at": "2026-06-18 23:27:48"
+    }
+  ],
+  "by_exercise": [
+    {
+      "exercise": "barbell biceps curl",
+      "sessions": 3,
+      "total_reps": 31,
+      "avg_reps": 10.3,
+      "avg_duration_sec": 29.0
+    },
+    {
+      "exercise": "push-up",
+      "sessions": 2,
+      "total_reps": 24,
+      "avg_reps": 12.0,
+      "avg_duration_sec": 37.0
+    },
+    {
+      "exercise": "shoulder press",
+      "sessions": 2,
+      "total_reps": 15,
+      "avg_reps": 7.5,
+      "avg_duration_sec": 27.5
+    },
+    {
+      "exercise": "squat",
+      "sessions": 3,
+      "total_reps": 24,
+      "avg_reps": 8.0,
+      "avg_duration_sec": 31.0
+    }
+  ]
+}
